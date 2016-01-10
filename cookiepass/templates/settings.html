@@ -1,0 +1,37 @@
+{% import "_includes/forms" as forms %}
+
+{{
+	forms.textField({
+		label: "<strong>Password</strong>*:" | t,
+		id: 'password',
+		name: 'password',
+		value: (settings.password is defined ? settings.password : null),
+	})
+}}
+
+{{
+	forms.textField({
+		label: "<strong>Cookie Name</strong>*:" | t,
+		id: 'cookieName',
+		name: 'cookieName',
+		value: (settings.cookieName is defined ? settings.cookieName : null),
+	})
+}}
+
+{{
+	forms.textField({
+		label: "<strong>Login Message</strong>*:" | t,
+		id: 'loginMsg',
+		name: 'loginMsg',
+		value: (settings.loginMsg is defined ? settings.loginMsg : null),
+	})
+}}
+
+{{
+	forms.textField({
+		label: "<strong>Logout Message</strong>*:" | t,
+		id: 'logoutMsg',
+		name: 'logoutMsg',
+		value: (settings.logoutMsg is defined ? settings.logoutMsg : null),
+	})
+}}
