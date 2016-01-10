@@ -23,6 +23,16 @@ class CookiePassPlugin extends BasePlugin
 		return 'http://www.rubbertrumpet.com';
 	}
 
+	public function getPluginUrl()
+	{
+		return 'https://github.com/Jammooka/CookiePass';
+	}
+
+	public function getDocumentationUrl()
+	{
+		return $this->getPluginUrl();
+	}
+
 	public function addTwigExtension()
 	{
 		Craft::import('plugins.cookiepass.twigextensions.CookiePassTwigExtension');
